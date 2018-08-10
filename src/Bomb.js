@@ -10,7 +10,6 @@ export default class Bomb extends React.Component {
     const interval = global.setInterval(() => {
       if (this.state.secondsLeft === 1) {
         global.clearInterval(interval);
-        console.log('interval cleared');
       }
       this.setState({ secondsLeft: this.state.secondsLeft - 1 });
     }, 1000);
